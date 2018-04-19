@@ -47,5 +47,27 @@ namespace MVC_Model.Controllers
 
             return View(person);
         }
+
+        // GET: Student/Create
+        public ActionResult Create3()
+        {
+            return View();
+        }
+
+        // POST: Student/Create
+        [HttpPost]
+        public ActionResult Create3(Person2 person)
+        {
+
+            if (!ModelState.IsValid)
+            {
+
+                ModelState.AddModelError(string.Empty, "Person Name already exists.");
+                return View(person);
+            } else
+            {
+                return RedirectToAction("Create3");
+            }
+        }
     }
 }
