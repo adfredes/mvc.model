@@ -67,5 +67,23 @@ namespace MVC_Model.Controllers
 
             return View(e);
         }
+
+        public ActionResult ViewResourceModel()
+        {
+
+            ViewBag.Message = "Showing model data using format";
+            ViewBag.Message2 = "Employee Model";
+
+            Director d = new Director();
+
+            d.ID = 123;
+            d.FirstName = "Bart";
+            d.MiddleName = "";
+            d.LastName = "Simpson";
+            d.Email = "bart.simpson@gmail.com";
+            d.Birthday = DateTime.Now;
+
+            return View(d);
+        }
     }
 }
