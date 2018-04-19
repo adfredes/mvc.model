@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVC_Model.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,21 +11,61 @@ namespace MVC_Model.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return View ();
         }
 
-        public ActionResult About()
+        public ActionResult ViewRawModel ()
         {
-            ViewBag.Message = "Your application description page.";
+                        
+            ViewBag.Message  = "Showing model data raw";
+            ViewBag.Message2 = "Student Model";
 
-            return View();
+            Student s = new Student ();
+
+            s.ID = 123;
+            s.FirstName  = "Homer";
+            s.MiddleName = "J.";
+            s.LastName   = "Simpson";
+            s.Email = "hsimpson@gmail.com";
+            s.Birthday = DateTime.Now;
+
+            return View (s);
         }
 
-        public ActionResult Contact()
+        public ActionResult ViewDisplayModel()
         {
-            ViewBag.Message = "Your contact page.";
 
-            return View();
+            ViewBag.Message = "Showing model data using display";
+            ViewBag.Message2 = "Teacher Model";
+
+            Teacher t = new Teacher();
+
+            t.ID = 123;
+            t.FirstName = "W.";
+            t.MiddleName = "Seymour";
+            t.LastName = "Skinner";
+            t.Email = "wskinner@gmail.com";
+            t.Birthday = DateTime.Now;
+
+            return View(t);
+        }
+
+        public ActionResult ViewFormatModel()
+        {
+
+            ViewBag.Message = "Showing model data using format";
+            ViewBag.Message2 = "Employee Model";
+
+            Employee e = new Employee();
+
+            e.ID = 123;
+            e.FirstName = "Edna";
+            e.MiddleName = "";
+            e.LastName = "Krabappel";
+            e.Email = "ekrabappel@gmail.com";
+            e.Birthday = DateTime.Now;
+
+            return View(e);
         }
     }
 }

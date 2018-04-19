@@ -1,0 +1,17 @@
+﻿@model MVC_Model.Models.Teacher
+
+@{
+    ViewBag.Title = "View Model (Raw)";
+}
+
+<h2>@ViewBag.Title</h2>
+<br>
+<h3>@ViewBag.Message</h3>
+<br>
+<h4>@ViewBag.Message2</h4>
+<br>
+<p>@Html.LabelFor(m => Model.FirstName):@Html.Raw("&nbsp;")@Model.FirstName</p>
+<p>@Html.LabelFor(m => Model.MiddleName):@Html.Raw("&nbsp;")@Model.MiddleName</p>
+<p>@Html.LabelFor(m => Model.LastName):@Html.Raw("&nbsp;")@Model.LastName</p>
+<p>@Html.LabelFor(m => Model.Email):@Html.Raw("&nbsp;")@Model.Email</p>
+<p>@Html.LabelFor(m => Model.Birthday):@Html.Raw("&nbsp;")@Model.Birthday</p>
