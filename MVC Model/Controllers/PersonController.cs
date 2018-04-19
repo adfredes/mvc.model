@@ -16,10 +16,36 @@ namespace MVC_Model.Controllers
 
 		// POST: Student/Create
 		[HttpPost]
-		public ActionResult Create(Person student)
+		public ActionResult Create(Person person)
 		{
-			return RedirectToAction("Create");
-		}
 
-	}
+            if (ModelState.IsValid)
+            {
+
+                return RedirectToAction("Create");
+            }
+
+            return View(person);
+        }
+
+        // GET: Student/Create
+        public ActionResult Create2()
+        {
+            return View();
+        }
+
+        // POST: Student/Create
+        [HttpPost]
+        public ActionResult Create2(Person person)
+        {
+
+            if (ModelState.IsValid)
+            {
+
+                return RedirectToAction("Create2");
+            }
+
+            return View(person);
+        }
+    }
 }
