@@ -72,7 +72,7 @@ namespace MVC_Model.Controllers
         {
 
             ViewBag.Message = "Showing model data using format";
-            ViewBag.Message2 = "Employee Model";
+            ViewBag.Message2 = "Director Model";
 
             Director d = new Director();
 

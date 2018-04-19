@@ -143,11 +143,15 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Controllers\AddressController.cs" />
     <Compile Include="Models\Director.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Teacher.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -196,6 +200,9 @@
     <Content Include="Views\Home\ViewDisplayModel.cshtml" />
     <Content Include="Views\Home\ViewFormatModel.cshtml" />
     <Content Include="Views\Home\ViewResourceModel.cshtml" />
+    <Content Include="Views\Address\Create.cshtml" />
+    <Content Include="Views\Address\Index.cshtml" />
+    <Content Include="Views\Person\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

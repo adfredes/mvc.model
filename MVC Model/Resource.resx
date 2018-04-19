@@ -117,8 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="err_address_street" xml:space="preserve">
+    <value>Street is required!</value>
+  </data>
+  <data name="err_country_street" xml:space="preserve">
+    <value>Country is required!</value>
+  </data>
+  <data name="err_locality_street" xml:space="preserve">
+    <value>Locality is required!</value>
+  </data>
+  <data name="err_state_street" xml:space="preserve">
+    <value>State is required!</value>
+  </data>
+  <data name="err_zip_street" xml:space="preserve">
+    <value>Zip is required!</value>
+  </data>
   <data name="label_birthday" xml:space="preserve">
     <value>Birthday</value>
+  </data>
+  <data name="label_country" xml:space="preserve">
+    <value>Country  Address</value>
   </data>
   <data name="label_email" xml:space="preserve">
     <value>Email Address</value>
@@ -129,10 +147,22 @@
   <data name="label_last_name" xml:space="preserve">
     <value>Lastname</value>
   </data>
+  <data name="label_locality" xml:space="preserve">
+    <value>Locality Address</value>
+  </data>
   <data name="label_middle_name" xml:space="preserve">
     <value>Middle</value>
   </data>
   <data name="label_name" xml:space="preserve">
     <value>Name</value>
+  </data>
+  <data name="label_state" xml:space="preserve">
+    <value>State Address</value>
+  </data>
+  <data name="label_street" xml:space="preserve">
+    <value>Street Address</value>
+  </data>
+  <data name="label_zip" xml:space="preserve">
+    <value>ZIP Address</value>
   </data>
 </root>

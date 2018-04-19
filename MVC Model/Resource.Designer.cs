@@ -61,11 +61,65 @@ namespace MVC_Model {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Street is required!.
+        /// </summary>
+        public static string err_address_street {
+            get {
+                return ResourceManager.GetString("err_address_street", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Country is required!.
+        /// </summary>
+        public static string err_country_street {
+            get {
+                return ResourceManager.GetString("err_country_street", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Locality is required!.
+        /// </summary>
+        public static string err_locality_street {
+            get {
+                return ResourceManager.GetString("err_locality_street", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to State is required!.
+        /// </summary>
+        public static string err_state_street {
+            get {
+                return ResourceManager.GetString("err_state_street", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zip is required!.
+        /// </summary>
+        public static string err_zip_street {
+            get {
+                return ResourceManager.GetString("err_zip_street", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Birthday.
         /// </summary>
         public static string label_birthday {
             get {
                 return ResourceManager.GetString("label_birthday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Country  Address.
+        /// </summary>
+        public static string label_country {
+            get {
+                return ResourceManager.GetString("label_country", resourceCulture);
             }
         }
         
@@ -97,6 +151,15 @@ namespace MVC_Model {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Locality Address.
+        /// </summary>
+        public static string label_locality {
+            get {
+                return ResourceManager.GetString("label_locality", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Middle.
         /// </summary>
         public static string label_middle_name {
@@ -111,6 +174,33 @@ namespace MVC_Model {
         public static string label_name {
             get {
                 return ResourceManager.GetString("label_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to State Address.
+        /// </summary>
+        public static string label_state {
+            get {
+                return ResourceManager.GetString("label_state", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Street Address.
+        /// </summary>
+        public static string label_street {
+            get {
+                return ResourceManager.GetString("label_street", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ZIP Address.
+        /// </summary>
+        public static string label_zip {
+            get {
+                return ResourceManager.GetString("label_zip", resourceCulture);
             }
         }
     }
